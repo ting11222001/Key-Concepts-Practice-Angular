@@ -5,6 +5,7 @@ import { interval } from 'rxjs';
 /**
  * Notes:
  * takeUntilDestroyed() can only be used within injection context.
+ * Injection context: Code that runs during construction.
  */
 @Component({
   selector: 'app-detail-3',
