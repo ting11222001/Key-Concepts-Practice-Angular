@@ -7,7 +7,7 @@ import { interval, Subject, Subscription, switchMap } from 'rxjs';
  * Subject: a special type of Observable that allows values to be multicasted to many Observers. Subjects are like EventEmitters.
  * asObservable(): Creates a new Observable with this Subject as the source.
  * The dollar sign of startSecondTickSubject$: means it's just an Observable, not the data itself.
- * Note taht the tear down logic only works to the operators ABOVE the takeUntilDestroyed() operator!
+ * Note that the tear down logic only works to the operators ABOVE the takeUntilDestroyed() operator!
  * 
  * switchMap: If you press the reset button, throw away the old stopwatch and start a new one.
  * takeUntilDestroyed(): When you leave the room (destroy the component), throw away any running stopwatch—don’t let it tick in the empty room!
