@@ -19,7 +19,7 @@ This `interval()` creates an Observable that emits sequential numbers every spec
 
 - `DestroyRef` can be used with `takeUntilDestroyed`.
 
-- Order of pipeline operations (see example in detail5 component)
+- Order of pipeline operations: `takeUntilDestroyed` should put put after the operators it tears down (see example in the detail5 component) and before any operators that exetue when the source stream completes (see example in the detail6 component) .
 
 ## Development server
 
